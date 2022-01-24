@@ -215,6 +215,7 @@ ul {
 
 .card p {
     padding: 0 23px;
+    min-height: 80px;
 }
 
 .card-link {
@@ -377,7 +378,7 @@ ul {
 }
 
 .review-img {
-    max-width: 250px;
+    min-width: 200px;
     max-height: 180px;
     border-radius: 20px;
     overflow: hidden;
@@ -386,6 +387,11 @@ ul {
 .review-flex {
     justify-content: space-between;
     align-items: center;
+}
+
+.reviewer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .reviewer-name {
@@ -596,6 +602,7 @@ ul {
         position: absolute;
         right: 3%;
         top: 1%;
+        bottom: 0%;
         cursor: pointer;
         padding: 11px;
         border-radius: 5px 5px 0 0;
@@ -661,6 +668,7 @@ ul {
 
     .review-header {
         margin-bottom: 30px;
+        padding: 0;
     }
 
     .pricing {
