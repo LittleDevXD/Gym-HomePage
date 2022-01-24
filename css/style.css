@@ -128,6 +128,7 @@ ul {
 .hero {
     color: var(--white);
     padding: 10px;
+    margin-top: 50px;
 }
 
 .hero-flex {
@@ -176,7 +177,7 @@ ul {
 }
 
 .program {
-    margin: 150px 0;
+    margin-top: 150px;
 }
 
 .program h2 {
@@ -186,7 +187,7 @@ ul {
 
 .card {
     background-color: var(--light-dark);
-    margin-right: 35px; 
+    margin-bottom: 20px;
     max-width: 265px;
     min-height: 360px;
     border-radius: 18px;
@@ -200,6 +201,8 @@ ul {
 
 .card-flex {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .card-img {
@@ -229,6 +232,11 @@ ul {
 
 .card-link img {
     padding-left: 10px;
+}
+
+.join {
+    padding: 20px;
+    margin-top: 80px;
 }
 
 .join-p {
@@ -320,11 +328,21 @@ ul {
     padding: 21px;
 }
 
+.team-flex {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .team-p {
     opacity: 70%;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 90px;
+}
+
+.trainer {
+    max-width: 367px;
 }
 
 .trainer img {
@@ -367,6 +385,7 @@ ul {
 
 .review-flex {
     justify-content: space-between;
+    align-items: center;
 }
 
 .reviewer-name {
@@ -389,6 +408,10 @@ ul {
     line-height: 163%;
 }
 
+.review-header {
+    padding-bottom: 100px;
+}
+
 .review-header p {
     color: var(--red);
     padding-bottom: 15px;
@@ -396,11 +419,28 @@ ul {
 }
 
 .swipe-btns {
-    padding: 17px 0;
+    padding-top: 25px;
+    padding-bottom: 50px;
     display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 0.6rem;
 }
+
+.swipe-btn {
+    transition: 0.3s;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.active {
+    width: 28px;
+}
+
 
 .btn-unabled {
     opacity: 40%;
@@ -440,6 +480,7 @@ ul {
 }
 
 .newsletter-field {
+    position: relative;
     background-color: var(--light-dark);
     border-radius: 10px;
     display: flex;
@@ -463,7 +504,8 @@ ul {
 .newsletter-submit {
     background-color: var(--red);
     font-size: 22px;
-    margin-right: 3px;
+    position: absolute;
+    right: 2%;
     padding: 6.2px 11px;
     border-radius: 10px;
     cursor: pointer;
@@ -479,6 +521,11 @@ ul {
     background-color: transparent;
     color: var(--red);
 }
+
+.footer {
+    padding: 20px;
+}
+
 
 .footer-p {
     font-family: var(--paragraph-font);
@@ -514,7 +561,11 @@ ul {
 
 @media screen and (max-width:760px) {
     h1 {
-        font-size: 55px;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 45px;
     }
 
     p {
@@ -567,10 +618,84 @@ ul {
         padding: 0 10px; 
     }
 
+    .hero {
+        margin-top: 10px;
+    }
+
     .hero-flex {
         flex-direction: column;
     }
     .hero-flex .left {
         padding: 30px 10px;
+    }
+
+    .program {
+        margin-top: 60px;
+    }
+
+    .program h2 {
+        margin-bottom: 20px;
+    }
+
+    .join {
+        margin-top: 50px;
+    }
+
+    .join-flex {
+        flex-direction: column;
+    }
+
+    .join-img {
+        max-width: 80%;
+        margin-top: 10px;
+    }
+
+    .reviews {
+        padding: 20px;
+        margin-top: 50px
+    }
+
+    .review-flex {
+        flex-direction: column;
+    }
+
+    .review-header {
+        margin-bottom: 30px;
+    }
+
+    .pricing {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .pricing h2 {
+        margin-bottom: 20px;
+    }
+
+    .trainer img {
+        width: 70%;
+    }
+
+    .trainer-name {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    .trainer-about {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .team-p {
+        margin-bottom: 10px;
+    }
+
+    .team-header {
+        padding: 20px;
+    }
+
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
